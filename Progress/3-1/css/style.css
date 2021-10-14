@@ -1,0 +1,24 @@
+/* Google Fonts; Lora(serif), Poppins(sans-serif), Source Sans Pro(sans-serif) */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	width:  100%;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: white;
+	color: #00a16; /*字體顏色*/
+	font-family: Lora, serif;
+	font-size: 1.2vh;
+	line-height: 1.8vh;
+}
+
+h1, h2, h3 {
+	font-family: Poppins, sans-serif;
+}
