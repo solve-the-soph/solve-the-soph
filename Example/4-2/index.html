@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title> Example 4-2: Absolute Positioning</title>
+		<link rel="stylesheet" type="text/css" href="..css/default/css">
+		<style >
+			div{
+				position: absolute;
+				right: 0px /*會貼齊上層元件右側。上層是body，所以會以Body為參考點*/;
+			}
+			p{
+				position: absolute;
+				top: 500px/*離上原參考點移500px的意思，代表會往下移*/;
+				right: 0 /*因為原上層沒有設定，所以會再其他position設定，所以會再網上找，直到;
+			}
+		</style>
+	</head>
+	<body style="background-color: pink;">
+		<article style="position: relative/*想要把他當參考點就把他設relative就好。（只要上層有position設定即可;background-color: crimson; height:300px; width:300px">
+		This is an article.
+		</article>
+		<div style="background-color: orange; height:300px; width:300px">
+		This is a division.
+		</div>
+		<article style="background-color: crimson; height:300px; width:300px">
+		This is another article.
+			<p style="background-color:blue;">
+			This is a paragraph.
+			</p>
+		</article>
+		<article style="position: relative/*想要把他當參考點就把他設relative就好。（只要上層有position設定即可;background-color: crimson; height:300px; width:300px">
+		This is an article.
+		</article>
+		<article style="position: relative/*想要把他當參考點就把他設relative就好。（只要上層有position設定即可;background-color: crimson; height:300px; width:300px">
+		This is an article.
+		</article>
+		<article style="position: relative/*想要把他當參考點就把他設relative就好。（只要上層有position設定即可;background-color: crimson; height:300px; width:300px">
+		This is an article.
+		</article>
+		<article style="position: relative/*想要把他當參考點就把他設relative就好。（只要上層有position設定即可;background-color: crimson; height:300px; width:300px">
+		This is an article.
+		</article>
+		<article style="position: relative/*想要把他當參考點就把他設relative就好。（只要上層有position設定即可;background-color: crimson; height:300px; width:300px">
+		This is an article.
+		</article>
+	</body>
+</html>
