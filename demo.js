@@ -26,3 +26,6 @@ var profile = {
 	height: 180,
 	weight:72
 };
+
+console.log(profile.name); //Get the value of the "name"
+console.log(profile['name']);//Same
