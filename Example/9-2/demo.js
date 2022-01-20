@@ -1,11 +1,12 @@
-bwindow.onload = function(){
+window.onload = function(){
 	let firstP = document.querySelector('div > p');
-	//console.log(firstP.style);
-	firstP.style.backgroundColor = 'red';
+	console.log(firstP.style);
+	
+	firstP.style.backgroundColor = 'pink';
 	firstP.style.color = 'white';
 
 	let allDivPs = document.querySelectorAll('div > p');
-	allDivPs[1].style.cssText = 'background-color: green; color: red;'
+	allDivPs[1].style.cssText = 'background-color: purple; color: blue;'
 
 	let allDivs = document.getElementsByTagName('div');
 	//allDivs[4].style.cssText = 'background-color:gold; color:white;';

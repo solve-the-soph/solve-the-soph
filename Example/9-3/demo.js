@@ -3,9 +3,8 @@ function anotherMsg(){
 
 }
 
-
 window.onload = function(){
-	let bodyEM = document.querySelector('body');
+	let bodyEM = document.querySelector('body');//html只有一個body 
 	bodyEM.addEventListener('click', function(){
 		//Callback function:事件發生時才會把function叫回來執行
 		//alert('Body is clicked');
@@ -14,16 +13,18 @@ window.onload = function(){
 	firstDiv.addEventListener('mouseenter', anotherMsg);
 
 	//let button = document.querySelector('button');
-	let changeButton = document.getElementById('changeDiv');
-	changeResetButton.addEventListener('click', function(){
+	//button.addEventListener('mouseenter', function(){
+		//firstDiv.style.backgroundColor = 'red';
+	//} )
+	
+	let changeButton = document.getElementById('changeDiv1');
+	changeButton.addEventListener('click', function(){
 		firstDiv.style.backgroundColor = 'red';
 	});
 
-	Let changeResetButton = document.getElementById('changeResetDiv1');
+	let changeResetButton = document.getElementById('changeResetDiv1');
 	changeResetButton.addEventListener('click', function(){
-		firstDiv.class.toggle('gold');s
-	});
-	
-		
+		firstDiv.classList.toggle('pink');
 
+	});
 };

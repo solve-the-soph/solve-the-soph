@@ -1,26 +1,22 @@
-function printMsg(msg){
+function printMsg(msg) { //小括號裡能放收到的資料
 	let finalMsg = 'Message: ' + msg;
 	console.log(finalMsg);
 }
 
-//printMsg('Test!'); //把'Test'傳到msg的變數裡面
-//printMsg('Another Test!')
+printMsg('Test!'); //把字串傳過去，會傳到小括號的msg裏面
+printMsg('Another Test!');
 
 function userMsg(name, msg){
 	let finalMsg = name + ' says: ' + msg;
-	console.log(finalMsg);
+	console.log(finalMsg)
 }
+userMsg('Victor', 'Surprise!');
+userMsg('Mary', 'I Love Victor!');
 
-//userMsg('Victor', 'Surprise!');
-//userMsg('Mary', 'I love Victor!');
 
-function complexCalc(x,y){
-	let result = 0;
-	result = x * y;
-	result = result / (x - y);
-	result = result * y - x;
-	return result; //在return
+function Sophsays(day, msg){
+	let Soph = day + ' says ' + msg;
+	console.log(Soph);
 }
-
-var calcResult = complexCalc(4, 6);
-console.log(calcResult)
+Sophsays('Monday', 'hiiii');
+Sophsays('Sunday', 'Gotta study baby!');

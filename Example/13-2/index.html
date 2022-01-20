@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>Example13-2: jQuery animation with more flexibility</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			window.onload = function(){
+				$('button#changeSize').on('click', function(){
+					$('div#changeSize').animate({
+						width: '100px',
+						height: '100px'
+					},1000);
+					//animate=進行怎麼樣的動畫animation takes an object representing a CSS style and the time length. Animate只能用來改變有數字的設定。
+				});
+				
+				$('button#moveDiv').on('click', function(){
+					$('div#moving').animate({
+						left: '50vw'
+					},2000);
+					});
+				$('button#changeSizePos').on('click', function(){
+					$('div#biggerToTheRight').animate({
+						width: '100px',
+						height: '100px'
+					},500).animate({
+						left:'50vw'
+					},1000);
+				})
+			};
+		</script>
+	</head>
+	<body>
+		<div id="newSize" style="width: 50px; height: 50px; background-color: orange;"></div>
+		<button id="changeSize"></button>
+		<div id="moving" style="position: relative;width:50 px; height:50px; background-color: crimson;"></div>
+		<button id="moveDiv">Move a DIV</button>
+		<div id="biggerToTheRight" style="position:relative; width:50 px; height:50px; background-color: blue;"></div>
+		<button id="changeSizePos">change Size and Move</button>
+	</body>
+</html>

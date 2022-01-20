@@ -46,9 +46,35 @@ console.log(profile.gender)
 delete profile.gender; //刪掉某個欄位 delete a key
 console.log(profile.gender) //會變undefined
 
-profile 
+profile = {
+	name: 'Sophie',
+	age: 20,
+	height: 157,
+	weight: 45,
+	contact:{
+		home: 055519485,
+		mobile: [0912887892, 12345678, 23456789],
+		email: '@gmail.com'
 
+	}
+};
+console.log(profile.contact.home);
+console.log(profile.contact);
 
+console.log(profile.contact.mobile[1]); //outcome:12345678
+
+function printMsg(msg){
+	console.log(msg);
+}
+
+function simpleCalc(x,y){
+	console.log(x+y);
+}
+	var demoFuncs = {
+		print: printMsg,
+		calc: simpleCalc
+	};
+demoFuncs.print('Message printed!')
 
 
 
