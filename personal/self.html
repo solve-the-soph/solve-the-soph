@@ -8,58 +8,87 @@
 		<style>
 		
 		body{
-			font-size: 20px;
-			background-color: darkblue;
-			margin: 20px;
+			background-color: #49310D ;
 		}
 		h1, h2, h3{
-			font-family: font-family: 'Neonderthaw', cursive; ;
+			font-family: 'Merriweather', serif;
 			text-align: center;
 			color: #F3EC10;
-			font-weight: 600;
+			font-weight: 600; /*字體粗細*/
 			font-size: 30px;
-			padding-left: 20px;
+			/*padding-left: 20px;*/
 		}
 		
 		p{
-			width: 600px; 
-			padding: 20px; 
+			padding: 30px; 
+			/*font-size: 20px;*/
 			color: white;
-			font-size: 20px;
 			text-align: center;
+			font-family: 'Merriweather Sans', sans-serif;
+		}
+
+		section:first-of-type{
+			width: 50vw;
+			/*background-color: #5F2BB9;*/
+			margin: 30px 0;
 		}
 		
 		p > b{
 			color: #F3EC10;
 		}
 
+		p#chinese{
+			font-family: 'Source Serif 4', sans-serif;;
+		}
+
+		img#me {
+			width: 50vw;
+			position: absolute;
+			top: 0;
+			left: 50vw;
+			z-index: -999;
+		}
+
+		img#music{
+			width: 100vw;
+
+			position: absolute;
+			z-index: -999;
+
+
+
+		}
+	
+
 		nav {
-	background-color: #F999AF;		 
-	text-align: center;
-	font-family: 'Moo Lah Lah', cursive;
-	color: #F8F125;
-	font-size: 30px;
-	padding: 30px;
-	margin: 30px 70px;
-	opacity: 0.9;
-	border-width: 4px;
-	border-style: dotted;
-	border-color: white;
-	
-	
+			background-color: ;
+			/*background-color:rgba(255,255,255,0.6);*/
+			text-align: center;
+			font-family: 'Moo Lah Lah', cursive;
+			color: #F8F125;
+			font-size: 30px;
+			padding: 40px 0;
+			/*margin: 0 200px;
+			/*border-width: 4px;
+			border-style: dotted;
+			border-color: white;*/
+		}
 
-}
 
-nav > a{
-	color: darkblue;
-	font-size: 45px;
-	text-align: center;
-	padding: 60px;
-	padding-top: 60px;
-	padding-bottom: 60 px;
-	font-family: 'Moo Lah Lah', cursive;
-	text-decoration: none;
-}
+
+		nav > a{
+			color: wheat;
+			font-size: 55px;
+			text-align: center;
+			/*padding: 60px;
+			padding-top: 60px;
+			padding-bottom: 60 px;*/
+			padding: 0 20px;
+			font-family: 'Moo Lah Lah', cursive;
+			text-decoration: none;
+		}
+
+		
 		</style>
 	</head>
 	
@@ -68,49 +97,43 @@ nav > a{
 				✦✧｡<a href="https://solve-the-soph.github.io/personal/"> Home</a>⋆<a href="https://solve-the-soph.github.io/personal/self.html">ME❃</a>⋆<a href="solve-the-soph.github.io/personal/knowledge.html">Sth to Know*</a>｡✧✦
 			</nav>
 			
-			<article> 
-				<section>
-					<h1>Basic INFO + Greetingssss</h1>
-					<p style="text-align: center; padding: ;">
-						Hiya! Nice to meet you! My name is <b>Yi-Hua Chiao</b>, but most of my friends just call me <b>Sophie</b>. I like this name a lot since I am a big fan of “Howl’s Moving Castle” by Diana Wayne Jones.</p>
-					<p>嗨咿～泥好！我是<b>喬怡華</b>，但你也可以叫我<b>Sophie</b>。我很喜歡這個名字，因為我是黛安娜·韋恩·瓊斯，《霍爾的移動城堡》忠實粉絲。</p>
-				</section>
-				 
-				 <div style="position: relative; top:-100px; text-align: right;">
-				 	<img src="IMG_9749.jpg" width="400px" width="auto">
-				 </div>
-				
-				<section>
-					<h2>MAJOR issues about ME</h2>
-					<p style="text-align: left ;" >
+				<section > 
+					<h1>MAJOR issues about ME</h1>
+					<p style="text-align: center ;" >
 						I am a junior from <b>NTHU</b>, double majoring in Foreign Languages and Literature, and also Economics. I LOVE what I am learning at college a lot: The <b>FLL</b> department offers me chance to explore the realm of languages, and shape my personality and logic through literatures. On the other hand, the courses from the <b>Econ</b> department let me know about the market and pragmatic business knowledge. Beside my majors, I have also taken several courses about various domain, such as anthropology, gender/sex and art. Currently, I am also striving to acquire web design skills :)
 					</p>
-					<p>
-						我目前是清華大學的大三生，雙主修外文系及經濟系。我超愛在大學所學的一切。外文系讓我探索語言的奧妙，並透過文學塑造我的人格與邏輯。另一方面，經濟系的課程讓我知道市場機制，與實際的商業知識。除此之外，我也有修習許多不同領域的課程，例如：人類學、性別／性與藝術。目前，我也很努力的在學習網頁設計的技巧:)
+					<p id="chinese">
+						我目前是<b>清華大學</b>的大三生，雙主修外文系及經濟系。我超愛在大學所學的一切。<b>外文系</b>讓我探索語言的奧妙，並透過文學塑造我的人格與邏輯。另一方面，<b>經濟系</b>的課程讓我知道市場機制，與實際的商業知識。除此之外，我也有修習許多不同領域的課程，例如：人類學、性別／性與藝術。目前，我也很努力的在學習網頁設計的技巧:)
 					</p>
-					<h2 style="text-align: center;">Just ME</h2>
-				<div>
-				 	<img src="IMG_0486.jpg" width="400px" width="auto"  >
-				 </div>
-				 <div style="text-align:right;">
-				 <p>
-				 	As you can see, I love discovering and learning about new stuff. Besides academic studies, another way that I explore the world is through music. In my leisure time, I listen to Taiwanese indie bands and go to music festivals. The music composed by local bands are mesmerizing, and each band has exclusive, distinct styles. I reflect a lot from the lyrics and learn to feel and see the world through the songs.
-				</p>
-				<p style="text-align: center;">	
-					也許你能看出，我喜歡探索與學習新事物。除了學業外，另一個我探索世界的管道便是音樂。在閒暇時間，我喜歡聽台灣獨立樂團還有去音樂祭。他們創作的歌曲十分迷人，且每個樂團都有特有的風格。我從歌詞中反思生活，並透過他們的音樂感受世界。
-				 </p>
-				</div>
-
-
-				
 				</section>
-				<h2 style="text-align: center;">+ Greetingssss</h2>
+					<img id="me" src="me.jpg">
+		
+
+				 <section style="margin-top: 70px; width:50vw; position: absolute; right: 10px;">
+				 	<h2>Just ME</h2>
+				 		 <p>
+					 	As you can see, I love <b>discovering and learning</b> about new stuff. Besides academic studies, another way that I explore the world is through <b>music</b>. In my leisure time, I listen to <b>Taiwanese indie bands</b> and go to <b>music festivals</b>. The music composed by local bands are mesmerizing, and each band has exclusive, distinct styles. I reflect a lot from the lyrics and learn to feel and see the world through the songs.
+						</p>
+						<p id="chinese">	
+						也許你能看出，我喜歡<b>探索與學習</b>新事物。除了學業外，另一個我探索世界的管道便是<b>音樂</b>。在閒暇時間，我喜歡聽<b>台灣獨立樂團</b>還有去<b>音樂祭</b>。他們創作的歌曲十分迷人，且每個樂團都有特有的風格。我從歌詞中反思生活，並透過他們的音樂感受世界。
+					 	</p>
+				 </section>	
+				
+				<div>
+					 	<img id="music" src="music.jpg">
+
+				</div>
+				<div style="margin-top: 1000px; width:50vw; position: absolute; left: 1s0px; ">
+					<h3>+ Greetingssss</h3>
 				<p>
-					If you happen to run into me on campus, you’re more than welcome to say hi. We could talk about the courses, indie music, or literally anything. Although I do not sure what you are interested in, I’m sure we’d have a nice chat!!
+					If you happen to run into me on campus, you’re more than welcome to say hi. We could talk about the courses, indie music, or literally anything. Although I do not sure what you are interested in, <b>I’m sure we’d have a nice chat!!</b>
 				</p>
-				<p>	
-					如果你在學校遇到我，絕對可以來跟我說嗨！我們可以聊聊課程或獨立音樂。雖然我不知道你對什麼會有興趣，但我確定我們一定能聊得很開心！！
+				<p id="chinese">	
+					如果你在學校遇到我，絕對可以來跟我說嗨！我們可以聊聊課程或獨立音樂。雖然我不知道你對什麼會有興趣，但<b>我相信我們一定能聊得很開心！！</b><br>
 				</p>
+				</div>
+				<div style="margin-top: 980px; position: absolute;right: 20px; padding-bottom: 20px;"><iframe allow="fullscreen" frameBorder="0" height="480" src="https://giphy.com/embed/1jf43Ml3ckkoHO7Fev/video" width="480"></iframe></div>
+			
 			</article>
 	</body>
 </html>
