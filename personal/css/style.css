@@ -23,21 +23,35 @@ body {
 }
 
 section > div{
-			background-color:darkcyan;
-			font-size: 25px;
-			width: 8vw;
-			color: #F999AF; 
-			text-align: center;
-			position: fixed;
-			right: 0;
-			bottom: 0;
-			opacity:0.9;
-			padding: 5px;
+	background-color:darkcyan;
+	font-size: 25px;
+	width: 8vw;
+	color: #F999AF; 
+	text-align: center;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	opacity:0.9;
+	padding: 5px;}
 
+nav > a{
+	font-size: 55px;
+	font-family: 'Moo Lah Lah', cursive;
+	text-decoration: none;
+	padding: 0 20px;
+	}
 
+nav{
+	font-size: 30px;
+	padding: 40px 0;
+	text-align: center;
+}
 
-
-
+.rotate:hover{
+	 -webkit-transform: rotateZ(-10deg);
+     -ms-transform: rotateZ(-10deg);
+     transform: rotateZ(-10deg);
+}
 
 p{
 	font-family: 'Merriweather', serif;;

@@ -7,9 +7,9 @@
 	<script type="text/javascript" src="js/demo.js"></script>
 	<style>
 		body{
-		background-color:#49310D;
-		background-size: cover;
-		background-image:  url("fairyme.jpg");
+			background-color:#49310D;
+			background-size: cover;
+			background-image:  url("fairyme.jpg");
 		}
 		
 		p{
@@ -51,7 +51,7 @@
         	background-color: #49310D;
         	opacity: 0.9;
         	border-radius: 6px;
-        	padding: 10px 40px;
+        	padding: 10px 40px ;
         	color: wheat;
         	line-height: 40px;
 
@@ -60,50 +60,60 @@
         p > b{
 			color: #FAEF88;
 		}
-		
+
 		a{
-			color: white;
-		font-size: 55px;
-		text-align: center;
-		padding: 60px;
-		padding-top: 60px;
-		padding-bottom: 60 px;
 		font-family: 'Moo Lah Lah', cursive;
 		text-decoration: none;
-		/*line-height: 30px;　/* 設定文字行距 */
-    	/*letter-spacing: 20px;　/* 設定文字間距 */
+		color: white;
+		font-size: 55px;
+		text-align: center;
+		display: inline-block;
+		padding: 15px 0;
 		}
+		
+		a:hover{
+		color: #065F5E;
+		opacity: 0.8;
+		}
+
+		.rotate:hover{
+			 -webkit-transform: rotateZ(-10deg);
+        	-ms-transform: rotateZ(-10deg);
+        	transform: rotateZ(-10deg);
+		}
+
+		
 		
 		div#links{
 			
 		padding-top: 700px;
    		
    		text-align: center;
-
-
 		}
 		
 	</style>
 </head>
-<body>
-	
-		<div id="text">
-			<h1>🪐 ·   ·   ·  ·  ·     ·   · ·   ·🛸💨<br>
-				<b style="font-size: 80px; color: white;">Welcome to my website</b></br>
-			</h1> 
-			<p>
-				Hiya! Nice to meet you! My name is <b>Yi-Hua Chiao</b>, but most of my friends just call me <b>Sophie</b>. I like this name a lot since I am a big fan of “Howl’s Moving Castle” by Diana Wayne Jones.</p>
-				
-			<p>嗨咿～泥好！我是<b>喬怡華</b>，但你也可以叫我<b>Sophie</b>。我很喜歡這個名字，因為我是黛安娜·韋恩·瓊斯，《霍爾的移動城堡》的忠實粉絲。</p>
-		</div>
-		<div id="links">	
-			<nav>
-			<a href="index.html">Home</a>
-			<a href="self.html">ME!</a> 
-			<a href="knowledge.html">Sth to Know*</a>
-			</nav>
-		</div>	
-</body>
+	<body>
+		
+			<div id="text">
+				<h1>🪐 ·   ·   ·  ·  ·     ·   · ·   ·🛸💨<br>
+					<b style="font-size: 80px; color: white;">Welcome to my website</b></br>
+				</h1> 
+				<p>
+					Hiya! Nice to meet you! My name is <b>Yi-Hua Chiao</b>, but most of my friends just call me <b>Sophie</b>. I like this name a lot since I am a big fan of “Howl’s Moving Castle” by Diana Wayne Jones.</p>
+					
+				<p>嗨咿～泥好！我是<b>喬怡華</b>，但你也可以叫我<b>Sophie</b>。我很喜歡這個名字，因為我是黛安娜·韋恩·瓊斯，《霍爾的移動城堡》的忠實粉絲。</p>
+			</div>
+			<div id="links">	
+				<nav>
+					<ul>
+					<a class="rotate" href="index.html" >Home</a><br>
+					<a class="rotate" href="self.html">ME❃</a> <br>
+					<a class="rotate" href="knowledge.html" style="padding-bottom: 60px;">Sth to Know*</a>
+					</ul>
+				</nav>
+			</div>	
+	</body>
 </html>
 
 	
