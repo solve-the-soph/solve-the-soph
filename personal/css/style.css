@@ -47,11 +47,7 @@ nav{
 	text-align: center;
 }
 
-.rotate:hover{
-	 -webkit-transform: rotateZ(-10deg);
-     -ms-transform: rotateZ(-10deg);
-     transform: rotateZ(-10deg);
-}
+
 
 p{
 	font-family: 'Merriweather', serif;;
