@@ -22,6 +22,18 @@ body {
 	background-color: #5F2BB9;
 }
 
+section > div{
+			background-color:darkcyan;
+			font-size: 25px;
+			width: 8vw;
+			color: #F999AF; 
+			text-align: center;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			opacity:0.9;
+			padding: 5px;
+
 
 
 
